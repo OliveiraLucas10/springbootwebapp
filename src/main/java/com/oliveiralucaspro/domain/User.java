@@ -1,12 +1,14 @@
 package com.oliveiralucaspro.domain;
 
-import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by jt on 12/14/15.
- */
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.Transient;
+
 @Entity
 public class User extends AbstractDomainClass  {
 

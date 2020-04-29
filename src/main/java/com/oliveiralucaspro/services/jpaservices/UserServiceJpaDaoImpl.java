@@ -1,18 +1,17 @@
 package com.oliveiralucaspro.services.jpaservices;
 
-import com.oliveiralucaspro.domain.User;
-import com.oliveiralucaspro.services.UserService;
-import com.oliveiralucaspro.services.security.EncryptionService;
+import java.util.List;
+
+import javax.persistence.EntityManager;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.EntityManager;
-import java.util.List;
+import com.oliveiralucaspro.domain.User;
+import com.oliveiralucaspro.services.UserService;
+import com.oliveiralucaspro.services.security.EncryptionService;
 
-/**
- * Created by jt on 12/14/15.
- */
 @Service
 @Profile("jpadao")
 public class UserServiceJpaDaoImpl extends AbstractJpaDaoService implements UserService {

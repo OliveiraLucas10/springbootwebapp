@@ -1,16 +1,15 @@
 package com.oliveiralucaspro.services.jpaservices;
 
-import com.oliveiralucaspro.domain.Role;
-import com.oliveiralucaspro.services.RoleService;
+import java.util.List;
+
+import javax.persistence.EntityManager;
+
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.EntityManager;
-import java.util.List;
+import com.oliveiralucaspro.domain.Role;
+import com.oliveiralucaspro.services.RoleService;
 
-/**
- * Created by jt on 12/18/15.
- */
 @Service
 @Profile("jpadao")
 public class RoleServiceJpaImpl extends AbstractJpaDaoService implements RoleService {

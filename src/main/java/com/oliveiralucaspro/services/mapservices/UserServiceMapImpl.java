@@ -1,20 +1,18 @@
 package com.oliveiralucaspro.services.mapservices;
 
-import com.oliveiralucaspro.domain.DomainObject;
-import com.oliveiralucaspro.domain.User;
-import com.oliveiralucaspro.services.UserService;
-import com.oliveiralucaspro.services.security.EncryptionService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Profile;
-import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Predicate;
 
-/**
- * Created by jt on 12/14/15.
- */
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
+
+import com.oliveiralucaspro.domain.DomainObject;
+import com.oliveiralucaspro.domain.User;
+import com.oliveiralucaspro.services.UserService;
+import com.oliveiralucaspro.services.security.EncryptionService;
+
 @Service
 @Profile("map")
 public class UserServiceMapImpl extends AbstractMapService implements UserService {

@@ -1,17 +1,16 @@
 package com.oliveiralucaspro.services;
 
-import com.oliveiralucaspro.domain.User;
+import java.util.ArrayList;
+import java.util.List;
 
-import com.oliveiralucaspro.repositories.UserRepository;
-import com.oliveiralucaspro.services.UserService;
-import com.oliveiralucaspro.services.security.EncryptionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.oliveiralucaspro.domain.User;
+import com.oliveiralucaspro.repositories.UserRepository;
+import com.oliveiralucaspro.services.security.EncryptionService;
 
 @Service
 @Profile("springdatajpa")

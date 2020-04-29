@@ -1,14 +1,14 @@
 package com.oliveiralucaspro.services;
 
-import com.oliveiralucaspro.domain.Role;
-import com.oliveiralucaspro.repositories.RoleRepository;
-import com.oliveiralucaspro.services.RoleService;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.oliveiralucaspro.domain.Role;
+import com.oliveiralucaspro.repositories.RoleRepository;
 
 @Service
 @Profile("springdatajpa")

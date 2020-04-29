@@ -1,4 +1,4 @@
-package oliveiralucaspro.config;
+package com.oliveiralucaspro.config;
 
 import org.jasypt.util.password.StrongPasswordEncryptor;
 import org.springframework.context.annotation.Bean;

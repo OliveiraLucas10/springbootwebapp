@@ -1,9 +1,10 @@
 package com.oliveiralucaspro.services;
 
-import com.oliveiralucaspro.domain.Product;
-import com.oliveiralucaspro.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.oliveiralucaspro.domain.Product;
+import com.oliveiralucaspro.repositories.ProductRepository;
 
 @Service
 public class ProductServiceImpl implements ProductService {

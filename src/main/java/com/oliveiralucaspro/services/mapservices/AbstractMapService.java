@@ -1,12 +1,12 @@
 package com.oliveiralucaspro.services.mapservices;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import com.oliveiralucaspro.domain.DomainObject;
-
-import java.util.*;
-
-/**
- * Created by jt on 11/14/15.
- */
 public abstract class AbstractMapService  {
     protected Map<Integer, DomainObject> domainMap;
 

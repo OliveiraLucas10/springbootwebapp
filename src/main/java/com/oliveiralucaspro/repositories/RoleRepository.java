@@ -1,7 +1,8 @@
 package com.oliveiralucaspro.repositories;
 
-import com.oliveiralucaspro.domain.Role;
 import org.springframework.data.repository.CrudRepository;
+
+import com.oliveiralucaspro.domain.Role;
 
 public interface RoleRepository extends CrudRepository<Role, Integer>{
 }

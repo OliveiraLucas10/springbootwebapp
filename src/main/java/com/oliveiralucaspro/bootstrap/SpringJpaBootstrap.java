@@ -1,19 +1,20 @@
 package com.oliveiralucaspro.bootstrap;
 
-import com.oliveiralucaspro.domain.Product;
-import com.oliveiralucaspro.domain.Role;
-import com.oliveiralucaspro.domain.User;
-import com.oliveiralucaspro.repositories.ProductRepository;
-import com.oliveiralucaspro.services.RoleService;
-import com.oliveiralucaspro.services.UserService;
+import java.math.BigDecimal;
+import java.util.List;
+
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 
-import java.math.BigDecimal;
-import java.util.List;
+import com.oliveiralucaspro.domain.Product;
+import com.oliveiralucaspro.domain.Role;
+import com.oliveiralucaspro.domain.User;
+import com.oliveiralucaspro.repositories.ProductRepository;
+import com.oliveiralucaspro.services.RoleService;
+import com.oliveiralucaspro.services.UserService;
 
 @Component
 public class SpringJpaBootstrap implements ApplicationListener<ContextRefreshedEvent> {

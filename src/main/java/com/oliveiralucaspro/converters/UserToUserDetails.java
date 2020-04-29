@@ -1,13 +1,15 @@
 package com.oliveiralucaspro.converters;
 
-import com.oliveiralucaspro.domain.User;
-import com.oliveiralucaspro.services.security.UserDetailsImpl;
+import java.util.ArrayList;
+import java.util.Collection;
+
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
-import java.util.ArrayList;
-import java.util.Collection;
+
+import com.oliveiralucaspro.domain.User;
+import com.oliveiralucaspro.services.security.UserDetailsImpl;
 
 @Component
 public class UserToUserDetails implements Converter<User, UserDetails> {

@@ -1,8 +1,5 @@
 package com.oliveiralucaspro.domain;
 
-/**
- * Created by jt on 11/14/15.
- */
 public interface DomainObject {
 
     Integer getId();

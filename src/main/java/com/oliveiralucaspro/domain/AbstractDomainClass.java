@@ -1,11 +1,15 @@
 package com.oliveiralucaspro.domain;
 
-import javax.persistence.*;
 import java.util.Date;
 
-/**
- * Created by jt on 12/16/15.
- */
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
+import javax.persistence.Version;
+
 @MappedSuperclass
 public class AbstractDomainClass implements DomainObject {
 
